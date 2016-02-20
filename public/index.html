@@ -1,0 +1,45 @@
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html>
+<style>
+    html 					{ overflow-y:scroll; }
+    body 					{ padding-top:50px; }
+</style>
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    <base href="/">
+
+    <title>Question Board</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">  <!--	custom styles -->
+
+    <!-- SPELLS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script><!-- load angular -->
+
+    <script src="js/controllers/QuestionListCtrl.js"></script> <!-- load up our controller -->
+    <script src="js/controllers/QuestionDetailCtrl.js"></script>
+    <script src="js/services/QuestionService.js"></script> <!-- load our services -->
+    <script src="js/services/AnswerService.js"></script>
+    <script src="js/core.js"></script> <!-- load our main application -->
+</head>
+
+<body ng-app="questionApp">
+    <div class="container">
+        <div class="row">
+            <a href="/">
+                <h2 class="col-sm-8 col-sm-offset-2">Question Board</h2>
+            </a>
+            <div class="col-sm-8 col-sm-offset-2">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+</body>
+</html>
