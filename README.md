@@ -9,6 +9,8 @@ A Stack Overflow-like web application based on the MEAN Stack
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/ivanml/question-board`
-2. Install the application: `npm install`, then 'bower install'
+2. Install the application: `npm install`, then `bower install`
 3. Start the server: `node server.js`
 4. View in browser at `http://localhost:8080`
+
+![Imgur](http://i.imgur.com/la8Dww9.png)
